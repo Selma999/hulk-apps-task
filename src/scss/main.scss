@@ -1,0 +1,14 @@
+@import "base/typography";
+@import "base/variables";
+@import "./components/navbar.scss";
+@import "./components/hero-section.scss";
+
+* {
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font-size: $fontSize;
+  font-family: $fontFamily;
+}

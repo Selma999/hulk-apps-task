@@ -1,0 +1,26 @@
+.hero-section {
+  background-image: url("src/assets/Kitchen_3/Kitchen_3.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 675px;
+
+  &__text-group {
+    padding: 159px 0 0 85px;
+  }
+
+  &__title-text {
+    text-align: left;
+    font-size: 56px;
+    color: $creamyWhite;
+  }
+
+  &__text-paragraph {
+    text-align: left;
+    color: $creamyWhite;
+
+    padding: 14px 0 24px;
+
+    width: 407px;
+    height: 113px;
+  }
+}
