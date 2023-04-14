@@ -1,0 +1,11 @@
+.image-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  overflow: hidden;
+
+  &__image {
+    padding: 0 10px;
+  }
+}

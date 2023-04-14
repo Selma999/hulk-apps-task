@@ -1,0 +1,32 @@
+.title-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.title {
+  &__header {
+    font-size: 14px;
+    line-height: 62px;
+    letter-spacing: 2.1px;
+    color: $darkGreen;
+    text-transform: uppercase;
+    text-align: left;
+  }
+
+  &__title-text {
+    font-size: 36px;
+    line-height: 62px;
+    font-weight: 900;
+    font-family: 'Chronicle Display';
+    letter-spacing: 0px;
+    color: $darkGreen;
+
+    padding: 8px 0 12px;
+  }
+
+  &__subtitle {
+    color: $darkGreen;
+    text-align: left;
+  }
+}

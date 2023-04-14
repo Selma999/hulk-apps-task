@@ -1,0 +1,33 @@
+.meet-biom-section-wrapper {
+  background-image: url("src/assets/Mask_Group_12/Mask_Group_12.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+
+  display: flex;
+  > div {
+    flex-basis: 50%;
+  }
+}
+
+.meet-biom-section {
+  &__left-group {
+  }
+  &__text {
+    display: flex;
+    align-items: center;
+
+    font-family: "Brandon Grotesque";
+    font-size: 225px;
+    color: $offWhite;
+
+    margin-left: -400px;
+    margin-top: 250px;
+
+    transform: rotate(-90deg);
+  }
+  &__right-group {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 140px 84px 0px;
+  }
+}

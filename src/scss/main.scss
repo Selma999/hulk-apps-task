@@ -2,6 +2,11 @@
 @import "base/variables";
 @import "./components/navbar.scss";
 @import "./components/hero-section.scss";
+@import "./components/button.scss";
+@import "./components/iconTextTitle.scss";
+@import "./components/image-section.scss";
+@import "./components/title.scss";
+@import "./components/meet-biom-section.scss";
 
 * {
   margin: 0;
@@ -11,4 +16,5 @@ body {
   margin: 0;
   font-size: $fontSize;
   font-family: $fontFamily;
+  line-height: $lineHeight;
 }

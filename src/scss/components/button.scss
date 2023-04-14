@@ -1,0 +1,28 @@
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 180px;
+  height: 50px;
+
+  font-family: $fontFamily;
+  font-weight: 900;
+
+  text-transform: uppercase;
+  letter-spacing: 1.95px;
+
+  border-radius: 6px;
+  border: none;
+  opacity: 1;
+
+  &.primary {
+    background-color: $white;
+    color: $green;
+  }
+
+  &.secondary {
+    background-color: $green;
+    color: $creamyWhite;
+  }
+}

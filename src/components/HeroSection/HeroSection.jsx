@@ -1,5 +1,7 @@
 import React from "react";
+
 import HeroSectionTitleText from "./HeroSectionTitleText/HeroSectionTitleText";
+import Button from "../Button/Button";
 
 function HeroSection() {
   return (
@@ -13,6 +15,7 @@ function HeroSection() {
           better-for-the-planet wipes that are easy, effective, and
           plastic-free.
         </p>
+        <Button className='primary' buttonTitle='Get Started' />
       </div>
     </div>
   );
