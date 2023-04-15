@@ -1,0 +1,31 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  background-color: rgba($green, 0.72);
+
+  &__all-rights-reserved {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-top: 1px solid $green;
+
+    &__text {
+      font-size: 15px;
+      color: $creamyWhite;
+    }
+
+    &__social-media-icons {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+.footer-items {
+  display: flex;
+  flex-direction: column;
+}

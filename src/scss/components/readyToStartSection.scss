@@ -1,0 +1,29 @@
+.ready-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__biom-group {
+    display: flex;
+  }
+
+  &__biom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__text-section {
+      display: none;
+
+      &.hover {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    &:hover {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+    }
+  }
+}

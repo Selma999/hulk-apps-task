@@ -3,7 +3,7 @@
   align-items: center;
   justify-content: center;
 
-  width: 180px;
+  width: fit-content;
   height: 50px;
 
   font-family: $fontFamily;
@@ -16,13 +16,40 @@
   border: none;
   opacity: 1;
 
+  &__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-left: 1px solid $green;
+    height: 50px;
+    padding-left: 16px;
+    margin-left: 16px;
+
+    > image {
+      display: inline-flex;
+    }
+  }
+
   &.primary {
     background-color: $white;
     color: $green;
+    padding: 16px 36px;
   }
 
   &.secondary {
     background-color: $green;
     color: $creamyWhite;
+    padding: 16px 36px;
+  }
+
+  &.ghost {
+    background-color: $white;
+    color: $green;
+    padding: 16px;
+
+    border: 1px solid $green;
+    border-radius: 6px;
+    opacity: 1;
   }
 }

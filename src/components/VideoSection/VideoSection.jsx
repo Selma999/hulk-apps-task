@@ -1,4 +1,6 @@
 import React from "react";
+
+// component imports
 import Title from "../Title/Title";
 import CustomVideo from "./CustomVideo/CustomVideo";
 

@@ -16,3 +16,8 @@ Installation is done with the following command in the command line: npm i sass
 To enable usage of multiple classnames in the project I have used classNames library.
 It has to be installed in order to be used.
 Installation is done with the following command in the command line: npm i classnames
+
+## Carousel Library
+In this project I will be using Carousel Library.
+It must be installed in order to be used.
+Installation is done with the following command in the command line: npm i react-responsive-carousel

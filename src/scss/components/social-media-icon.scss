@@ -1,0 +1,17 @@
+.social-media-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: $creamyWhite;
+
+  width: 15px;
+  height: 15px;
+
+  border-radius: 50%;
+  padding: 1.5px;
+
+  > img {
+    width: 10px;
+    height: 10px;
+  }
+}

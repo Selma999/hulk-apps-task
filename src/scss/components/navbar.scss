@@ -1,11 +1,23 @@
+.navbar {
+  background-color: transparent;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 77px;
+  width: 100%;
+  z-index: 999;
+
+  backdrop-filter: blur(10px) brightness(1.5) saturate(3);
+}
+
 .navbar-items {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
-  background-color: $white;
+  background-color: rgba($white, 0.75);
 
-  padding: 0 5px 19px;
+  padding: 19px 25px;
 
   &__group {
     display: flex;

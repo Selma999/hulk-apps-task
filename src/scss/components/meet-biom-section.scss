@@ -11,6 +11,7 @@
 
 .meet-biom-section {
   &__left-group {
+    overflow: hidden;
   }
   &__text {
     display: flex;
@@ -21,7 +22,6 @@
     color: $offWhite;
 
     margin-left: -400px;
-    margin-top: 250px;
 
     transform: rotate(-90deg);
   }

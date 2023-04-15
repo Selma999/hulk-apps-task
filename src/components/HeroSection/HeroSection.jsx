@@ -1,5 +1,6 @@
 import React from "react";
 
+// component imports
 import HeroSectionTitleText from "./HeroSectionTitleText/HeroSectionTitleText";
 import Button from "../Button/Button";
 

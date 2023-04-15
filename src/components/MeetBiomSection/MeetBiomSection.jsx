@@ -1,15 +1,18 @@
 import React from "react";
 
-import iconTextList from "../../data/iconTextList";
+// component imports
 import IconTextList from "../IconTextList/IconTextList";
 import Button from "../Button/Button";
 import Title from "../Title/Title";
+
+// data imports
+import iconTextList from "../../data/iconTextList";
 
 function MeetBiomSection() {
   return (
     <div className="meet-biom-section-wrapper">
       <div className="meet-biom-section__left-group">
-        <h1 className="meet-biom-section__text">meet biom</h1>
+        <h1 className="meet-biom-section__text">meet iom</h1>
       </div>
       <div className="meet-biom-section__right-group">
         <Title
