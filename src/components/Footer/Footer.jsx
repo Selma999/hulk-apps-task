@@ -12,7 +12,7 @@ import footerItemsRight from "../../data/footerItemsRight";
 import logoImage from "../../assets/svg/biom-logo-footer.svg";
 import AllRightsReserved from "./AllRightsReserved/AllRightsReserved";
 
-function FooterSection() {
+function Footer() {
   return (
     <footer className="footer">
       <nav className="footer-items">
@@ -25,4 +25,4 @@ function FooterSection() {
   );
 }
 
-export default FooterSection;
+export default Footer;

@@ -1,7 +1,9 @@
 import "./App.css";
 
+//layout component imports
+import Layout from "./components/Layout/Layout";
+
 //section imports
-import NavBar from "./components/NavBar/NavBar";
 import HeroSection from "./components/HeroSection/HeroSection";
 import ImageSection from "./components/ImageSection/ImageSection";
 import VideoSection from "./components/VideoSection/VideoSection";
@@ -14,12 +16,10 @@ import ReadyToStartSection from "./components/ReadyToStartSection/ReadyToStartSe
 //data import
 import imageList from "./data/imageList";
 import carouselList from "./data/carouselList";
-import FooterSection from "./components/FooterSection/FooterSection";
 
 function App() {
   return (
-    <div className="App">
-      <NavBar />
+    <Layout>
       <HeroSection />
       <MeetBiomSection />
       <ImageSection imageList={imageList} />
@@ -27,9 +27,8 @@ function App() {
       <CarouselSection carouselList={carouselList} />
       <BetterForYouSection />
       <VideoSection />
-      <ContactFormSection />
-      <FooterSection />
-    </div>
+      {/* <ContactFormSection /> */}
+    </Layout>
   );
 }
 

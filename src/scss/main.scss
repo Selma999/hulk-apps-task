@@ -1,5 +1,6 @@
 @import "base/typography";
 @import "base/variables";
+@import "layout/layout";
 @import "./components/navbar.scss";
 @import "./components/hero-section.scss";
 @import "./components/button.scss";
@@ -14,10 +15,6 @@
 @import "./components/contact-form-section.scss";
 @import "./components/social-media-icon.scss";
 @import "./components/footer.scss";
-
-* {
-  margin: 0;
-}
 
 body {
   margin: 0;

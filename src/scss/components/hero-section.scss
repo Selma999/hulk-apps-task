@@ -1,7 +1,12 @@
+.hero-section-wrapper {
+  margin: 0 25px;
+}
+
 .hero-section {
-  background-image: url("src/assets/Kitchen_3/Kitchen_3.png");
-  background-size: contain;
+  background-image: url("src/assets/Kitchen_3/Kitchen_3@2x.png");
+  background-size: cover;
   background-repeat: no-repeat;
+  width: 100%;
   height: 675px;
 
   &__text-group {

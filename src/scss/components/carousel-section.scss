@@ -1,0 +1,58 @@
+// adjusting styles from the carousel library
+// -------- //
+.carousel-root {
+  background-color: $offWhite;
+  margin-bottom: 126px;
+}
+
+.carousel-status {
+  display: none;
+}
+
+.carousel-slider {
+  height: 420px;
+}
+
+.carousel .control-dots {
+  bottom: 55px;
+}
+
+.carousel .control-dots .dot {
+  box-shadow: none;
+  background: $white;
+  border: 1px solid $green;
+  border-radius: 50%;
+}
+
+.carousel .control-dots .dot.selected {
+  box-shadow: none;
+  background-color: $green;
+}
+
+.carousel .thumbs-wrapper {
+  display: none;
+}
+
+//adding custom styles for the carousel section
+// -------- //
+.carousel-section {
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    p {
+      &:first-of-type {
+        margin: 74px 0 0 0;
+      }
+      color: $darkGreen;
+      text-transform: uppercase;
+    }
+
+    h3 {
+      width: 747px;
+      margin: 26px 0;
+    }
+  }
+}

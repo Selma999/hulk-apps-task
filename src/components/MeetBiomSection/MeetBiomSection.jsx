@@ -12,7 +12,7 @@ function MeetBiomSection() {
   return (
     <div className="meet-biom-section-wrapper">
       <div className="meet-biom-section__left-group">
-        <h1 className="meet-biom-section__text">meet iom</h1>
+        <h1 className="meet-biom-section__text">meet biom</h1>
       </div>
       <div className="meet-biom-section__right-group">
         <Title

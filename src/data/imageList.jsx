@@ -6,6 +6,7 @@ const imageList = [
   {
     id: 2,
     src: "src/assets/office/office.png",
+    textOverImage: true,
   },
   {
     id: 3,
