@@ -56,3 +56,17 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .carousel .control-dots {
+    bottom: 10px;
+  }
+
+  .carousel-section {
+    &__item {
+      h3 {
+        width: 90%;
+      }
+    }
+  }
+}

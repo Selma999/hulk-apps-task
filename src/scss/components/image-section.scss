@@ -17,3 +17,9 @@
     }
   }
 }
+
+@media screen and (max-width: 768px) {
+  .image-section {
+    flex-wrap: wrap;
+  }
+}

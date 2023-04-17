@@ -1,9 +1,10 @@
 .footer {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-
   background-color: rgba($green, 0.72);
+
+  padding: 0 69px;
+  height: 436px;
+
+  margin-top: -150px;
 
   &__all-rights-reserved {
     display: flex;
@@ -11,6 +12,7 @@
     justify-content: space-between;
 
     border-top: 1px solid $green;
+    padding: 44px 0 40px;
 
     &__text {
       font-size: 15px;
@@ -28,4 +30,19 @@
 .footer-items {
   display: flex;
   flex-direction: column;
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 200px 0 50px 0;
+
+    div {
+      font-size: 14px;
+      line-height: 20px;
+      color: $creamyWhite;
+      letter-spacing: 1.4px;
+      padding: 0 13px;
+    }
+  }
 }

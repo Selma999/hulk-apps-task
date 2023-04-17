@@ -16,9 +16,11 @@ function Footer() {
   return (
     <footer className="footer">
       <nav className="footer-items">
-        <NavBarItemsGroup navBarItems={navBarItemsLeft} />
-        <NavBarLogo logoImage={logoImage} />
-        <NavBarItemsGroup navBarItems={footerItemsRight} />
+        <div className="footer-items__inner">
+          <NavBarItemsGroup navBarItems={navBarItemsLeft} />
+          <NavBarLogo logoImage={logoImage} />
+          <NavBarItemsGroup navBarItems={footerItemsRight} />
+        </div>
         <AllRightsReserved />
       </nav>
     </footer>

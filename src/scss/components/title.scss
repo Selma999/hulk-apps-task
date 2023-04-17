@@ -41,8 +41,6 @@
     letter-spacing: 0px;
     color: $darkGreen;
 
-    // padding: 8px 0 12px;
-
     &.secondary {
       color: $creamyWhite;
       text-align: center;
@@ -51,6 +49,7 @@
     &.image-text {
       font-size: 78px;
       line-height: 82px;
+      letter-spacing: -0.78px;
       color: $creamyWhite;
       width: 336px;
       text-align: center;

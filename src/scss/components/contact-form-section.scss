@@ -1,6 +1,86 @@
 .contact-form-section {
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background-image: url("src/assets/Biom_wipe_2/Biom_wipe_2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: $offWhite;
+
+  border-radius: 14px;
+  margin: 0 69px;
+  height: 300px;
+
+  position: relative;
+  z-index: 1;
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 500px;
+    padding: 0 0 47px 111px;
+  }
 
   &__email {
+    display: flex;
+    height: 52px;
+
+    background-color: $white;
+    border-radius: 6px;
+
+    margin: 18px 0 0 0;
+
+    &__input-field {
+      display: flex;
+      width: 414px;
+
+      border: unset;
+      border-radius: 6px;
+      outline: none;
+
+      &::placeholder {
+        padding-left: 15px;
+        color: $black;
+      }
+    }
+
+    &__icon {
+      display: flex;
+      align-items: center;
+      span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 44px;
+        height: 38px;
+
+        margin-right: 7px;
+
+        background-color: $green;
+        border-radius: 6px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .contact-form-section {
+    flex-wrap: wrap;
+
+    &__content {
+      flex-wrap: wrap;
+      width: unset;
+      padding: 30px;
+    }
+
+    &__email {
+      &__input-field {
+        flex-wrap: wrap;
+        width: unset;
+      }
+    }
   }
 }

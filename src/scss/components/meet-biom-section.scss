@@ -6,33 +6,78 @@
   margin-bottom: 50px;
 
   display: flex;
-  > div {
+  > div:last-of-type {
     flex-basis: 50%;
   }
 }
 
 .meet-biom-section {
+  $cover-text-width: 1125px;
+
   &__left-group {
-    overflow: hidden;
+    overflow-y: scroll;
+    overflow-x: hidden;
     position: relative;
+
+    display: flex;
+    flex-direction: column-reverse;
+    width: 100%;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
+
+  &__text-transform-wrapper {
+    width: 225px;
+    height: 100%;
+  }
+
+  &__text-transform-wrapper {
+    transform-origin: top left;
+    transform: rotate(-90deg) translateX(-7%);
+
+    width: $cover-text-width;
+  }
+
   &__text {
+    margin: 0;
+
     display: flex;
     align-items: center;
 
-    position: absolute;
-    top: 55px;
-    left: -320px;
+    height: 1em;
 
-    font-family: "Brandon Grotesque";
     font-size: 225px;
+    white-space: nowrap;
     color: $offWhite;
-
-    transform: rotate(-90deg);
   }
+
   &__right-group {
     display: flex;
     flex-direction: column;
-    padding: 102px 140px 84px;
+    padding: 102px 140px 84px 0px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .meet-biom-section-wrapper {
+    > div:last-of-type {
+      flex-basis: unset;
+    }
+  }
+
+  .meet-biom-section {
+    &__text-transform-wrapper {
+      width: 100%;
+    }
+
+    &__text {
+      font-size: 120px;
+    }
+
+    &__right-group {
+      padding: 30px;
+    }
   }
 }

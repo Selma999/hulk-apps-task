@@ -4,14 +4,16 @@
   justify-content: center;
   background-color: $creamyWhite;
 
-  width: 15px;
-  height: 15px;
+  width: 30px;
+  height: 30px;
 
   border-radius: 50%;
-  padding: 1.5px;
+  padding: 3px;
+
+  margin-left: 10px;
 
   > img {
-    width: 10px;
-    height: 10px;
+    width: 17px;
+    height: 17px;
   }
 }

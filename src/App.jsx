@@ -27,7 +27,7 @@ function App() {
       <CarouselSection carouselList={carouselList} />
       <BetterForYouSection />
       <VideoSection />
-      {/* <ContactFormSection /> */}
+      <ContactFormSection />
     </Layout>
   );
 }

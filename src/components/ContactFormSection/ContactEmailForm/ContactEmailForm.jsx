@@ -1,10 +1,13 @@
 import React from "react";
 
-function ContactEmailForm({ label, contactEmailIconSrc }) {
+function ContactEmailForm({ placeholder, contactEmailIconSrc }) {
   return (
     <div className="contact-form-section__email">
-      <input label={label} />
-      <div>
+      <input
+        className="contact-form-section__email__input-field"
+        placeholder={placeholder}
+      />
+      <div className="contact-form-section__email__icon">
         <span>
           <img src={contactEmailIconSrc} />
         </span>

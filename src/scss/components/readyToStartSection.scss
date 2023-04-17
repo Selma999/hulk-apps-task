@@ -3,9 +3,13 @@
   align-items: center;
   justify-content: center;
 
+  margin: 120px 0 -18px;
+
   &__left-group {
     display: flex;
     flex-direction: column;
+
+    margin-left: 30px;
 
     > div {
       width: 300px;
@@ -14,12 +18,15 @@
 
   &__biom-group {
     display: flex;
+    justify-content: space-around;
   }
 
   &__biom {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-end;
+    justify-content: flex-start;
+
+    width: 350px;
 
     &__text-section {
       display: none;
@@ -27,7 +34,37 @@
       &.hover {
         display: flex;
         flex-direction: column;
+        width: 163px;
       }
+
+      &__title {
+        width: 163px;
+        letter-spacing: 2.2px;
+        font-size: 22px;
+      }
+
+      &__text {
+        letter-spacing: 1.7px;
+        font-size: 14px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .ready-section {
+    flex-wrap: wrap;
+
+    &__left-group {
+      text-align: center;
+    }
+
+    &__biom-group {
+      flex-wrap: wrap;
+    }
+
+    &__biom {
+      margin-top: 50px;
     }
   }
 }
