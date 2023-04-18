@@ -36,10 +36,10 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .better-for-section {
     flex-wrap: wrap;
-    margin: 30px;
+    margin: 0 0 60px;
 
     &__left-group {
       flex-wrap: wrap;
@@ -58,9 +58,12 @@
     }
 
     &__right-group {
+      align-items: center;
       width: 100%;
       margin: unset;
-      padding: 30px;
+      padding: 30px 30px 60px;
+
+      border-radius: unset;
     }
   }
 }

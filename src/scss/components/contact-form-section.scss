@@ -66,9 +66,11 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .contact-form-section {
     flex-wrap: wrap;
+    height: unset;
+    margin: 0 20px;
 
     &__content {
       flex-wrap: wrap;
@@ -77,9 +79,10 @@
     }
 
     &__email {
+      width: 100%;
       &__input-field {
         flex-wrap: wrap;
-        width: unset;
+        width: 100%;
       }
     }
   }

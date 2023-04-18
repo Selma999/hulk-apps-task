@@ -19,6 +19,8 @@
     top: 0;
     right: 0;
     z-index: -1;
+
+    object-fit: cover;
   }
   &__content {
     display: flex;
@@ -32,6 +34,20 @@
 
     button {
       margin-top: 10px;
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .video-section {
+    margin: 0;
+    border-radius: unset;
+
+    &__video {
+      margin: 0;
+      width: 100%;
+
+      border-radius: unset;
     }
   }
 }

@@ -1,0 +1,40 @@
+.instagram-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  margin-bottom: 80px;
+
+  &__image {
+    display: flex;
+    margin-bottom: 40px;
+  }
+}
+
+.image-up {
+  margin-top: -10px;
+}
+
+.image-down {
+  padding-top: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  .instagram-section {
+    margin-bottom: 40px;
+    &__image {
+      flex-wrap: wrap;
+    }
+  }
+
+  .image-up {
+    margin-top: -30px;
+  }
+
+  .image-down {
+    padding-top: unset;
+    margin-left: 130px;
+    margin-top: -30px;
+  }
+}

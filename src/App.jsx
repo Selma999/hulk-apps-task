@@ -16,6 +16,7 @@ import ReadyToStartSection from "./components/ReadyToStartSection/ReadyToStartSe
 //data import
 import imageList from "./data/imageList";
 import carouselList from "./data/carouselList";
+import InstagramSection from "./components/InstagramSection/InstagramSection";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
       <CarouselSection carouselList={carouselList} />
       <BetterForYouSection />
       <VideoSection />
+      <InstagramSection />
       <ContactFormSection />
     </Layout>
   );

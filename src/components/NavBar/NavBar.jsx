@@ -11,6 +11,7 @@ import navBarItemsRight from "../../data/navBarItemsRight";
 
 // image imports
 import logoImage from "../../assets/svg/biom-logo-homepage.svg";
+import cart from "../../assets/svg/cart.svg";
 
 function NavBar({ className }) {
   return (
@@ -18,7 +19,12 @@ function NavBar({ className }) {
       <nav className="navbar-items">
         <NavBarItemsGroup navBarItems={navBarItemsLeft} />
         <NavBarLogo logoImage={logoImage} />
-        <NavBarItemsGroup navBarItems={navBarItemsRight} />
+        <NavBarItemsGroup
+          navBarItems={navBarItemsRight}
+          navBarIcon
+          src={cart}
+          alt="cart"
+        />
       </nav>
     </header>
   );

@@ -10,15 +10,21 @@
     position: relative;
     z-index: -1;
 
+    // transition: all 3s linear;
+
     &__text {
       position: absolute;
       top: 20%;
       left: 20%;
     }
+
+    // :hover {
+    //   transform: scale(2);
+    // }
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   .image-section {
     flex-wrap: wrap;
   }

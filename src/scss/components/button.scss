@@ -29,6 +29,10 @@
     > image {
       display: inline-flex;
     }
+
+    &:hover {
+      background-color: $green;
+    }
   }
 
   &.primary {
@@ -41,6 +45,10 @@
     background-color: $green;
     color: $creamyWhite;
     padding: 16px 36px;
+
+    &:hover {
+      background-color: $darkGreen;
+    }
   }
 
   &.ghost {
@@ -51,5 +59,9 @@
     border: 1px solid $green;
     border-radius: 6px;
     opacity: 1;
+
+    &:hover {
+      background-color: $creamyWhite;
+    }
   }
 }

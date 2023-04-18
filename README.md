@@ -25,10 +25,11 @@ Installation is done with the following command in the command line: npm i react
 
 
 Most of all I liked the design and content. It was clean, clear and concise, tempting enough to cut out all other designs, and start working on this one, although it's labeled as the hardest.
-The explanation of the task itself was clear and funny (which I consider very important for having a healthy work environment).
+The explanation of the task itself was clear and humorous.
 
-What I didn't like is that spacings aren't equal throughout the design (for example, button has left margin 16px and right margin 15px), but that could also be due to application used to create the design ( I know that Figma has the same problem).
 The only thing I missed is being able to download all icons as SVGs (some were both svg and png available, but some weren't).
 
 
-The quantity of task seems a little too much at first. Behind the task is a lot of work for 7 days, but it can certainly be managed. Aaand most certainly it was very challenging and interesting to work on this task.
+The quantity of task seems a little too much at first. Aaand most certainly it was very challenging and interesting to work on this task.
+
+P.S. Regarding the responsive, I have 

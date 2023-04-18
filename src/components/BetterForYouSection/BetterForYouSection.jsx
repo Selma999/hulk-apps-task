@@ -3,22 +3,28 @@ import React from "react";
 // component imports
 import Title from "../Title/Title";
 import PImage from "../PImage/PImage";
+import Button from "../Button/Button";
 import IconTextList from "../IconTextList/IconTextList";
 
 // data imports
 import iconTextListSecond from "../../data/iconTextListSecond";
-import Button from "../Button/Button";
 
 // image imports
 import adobeImage from "../../assets/AdobeStock_377418446_Preview/AdobeStock_377418446_Preview.png";
+import adobeImageHD from "../../assets/AdobeStock_377418446_Preview/AdobeStock_377418446_Preview@2x.png";
 import refillPackImage from "../../assets/Refill Packaging_Mockup_2/Refill Packaging_Mockup_2.png";
+import refillPackImageHD from "../../assets/Refill Packaging_Mockup_2/Refill Packaging_Mockup_2@2x.png";
 
 function BetterForYouSection() {
   return (
     <div className="better-for-section">
       <div className="better-for-section__left-group">
-        <PImage src={adobeImage} />
-        <PImage src={refillPackImage} />
+        <PImage src={adobeImageHD} placeholder={adobeImage} alt="biom image" />
+        <PImage
+          src={refillPackImageHD}
+          placeholder={refillPackImage}
+          alt="refill packaging"
+        />
       </div>
       <div className="better-for-section__right-group">
         <Title
