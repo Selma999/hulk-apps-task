@@ -2,7 +2,6 @@ import React from "react";
 
 // component imports
 import Title from "../Title/Title";
-import PImage from "../PImage/PImage";
 import ContactEmailForm from "./ContactEmailForm/ContactEmailForm";
 
 // icon imports
