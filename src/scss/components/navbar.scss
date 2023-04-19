@@ -104,7 +104,8 @@
 
     &__link {
       text-align: left;
-      $fontFamily: normal normal bold Brandon Grotesque;
+      font-family: $fontFamily;
+      font-size: 15px;
       letter-spacing: 1.5px;
       color: $black;
       text-transform: uppercase;

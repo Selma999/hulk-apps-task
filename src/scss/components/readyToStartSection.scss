@@ -19,12 +19,15 @@
     }
 
     .title {
-      font-weight: 900;
       font-size: 36px;
-      font-family: Chronicle Display;
+      font-family: $secondaryFontFamily;
       line-height: 44px;
       letter-spacing: 0px;
       color: $black;
+
+      &__title-text {
+        margin-bottom: 24px;
+      }
     }
 
     .btn-wrapper {
@@ -90,9 +93,8 @@
       &__title {
         margin: 0;
 
-        font-weight: 900;
         font-size: 22px;
-        font-family: "Chronicle Display";
+        font-family: $secondaryFontFamily;
         line-height: 28px;
 
         letter-spacing: 1.05px;

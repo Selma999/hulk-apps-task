@@ -1,3 +1,19 @@
+@font-face {
+  font-family: "Chronicle Display";
+  src: local("Chronicle_Display_Roman"),
+    url("/fonts/Chronicle_Display_Roman.otf") format("opentype");
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Chronicle Display Black";
+  src: local("Chronicle_Display_Black"),
+    url("/fonts/Chronicle_Display_Black.otf") format("opentype");
+  font-weight: normal;
+}
+
 $fontSize: 16px;
 $lineHeight: 28px;
-$fontFamily: brandon-grotesque, sans-serif;
+$fontFamily: "Josefin Sans", sans-serif;
+$secondaryFontFamily: "Chronicle Display", sans-serif;
+$tertiaryFontFamily: "Chronicle Display Black", sans-serif;
