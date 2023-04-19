@@ -7,7 +7,7 @@ import CarouselItem from "./CarouselItem/CarouselItem";
 
 function CarouselSection({ carouselList }) {
   return (
-    <Carousel>
+    <Carousel showThumbs={false}>
       {carouselList.map(({ id, headerText, title, author }) => {
         return (
           <CarouselItem

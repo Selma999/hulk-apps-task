@@ -3,7 +3,9 @@ import React from "react";
 function NavBarLogo({ logoImage }) {
   return (
     <div className="navbar-items__logo">
-      <img src={logoImage} />
+      <a href="#">
+        <img src={logoImage} alt="" />
+      </a>
     </div>
   );
 }

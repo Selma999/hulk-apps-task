@@ -1,24 +1,29 @@
 import classNames from "classnames";
 import React, { useState } from "react";
 
-function BiomImage({ textOnImageHover, src }) {
-  const [showedTextOnImageHover, setShowedTextOnImageHover] = useState(false);
+import ProgressiveImage from "../../../ProgressiveImage";
 
-  const showTextOnImageHoverHandler = () => {
-    setShowedTextOnImageHover(true);
+function BiomImage({ textOnImageHover, src, placeholder, width, height }) {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const showTextOnHover = () => {
+    setIsHovered(true);
   };
 
-  const hideTextOnImageHoverHandler = () => {
-    setShowedTextOnImageHover(false);
+  const hideTextOnHover = () => {
+    setIsHovered(false);
   };
 
   return (
-    <div className="ready-section__biom">
+    <div
+      className="ready-section__biom"
+      onMouseOver={showTextOnHover}
+      onMouseLeave={hideTextOnHover}
+    >
       <div
-        className={classNames(
-          "ready-section__biom__text-section",
-          showedTextOnImageHover ? "hover" : ""
-        )}
+        className={classNames("ready-section__biom__text-section", {
+          hover: isHovered,
+        })}
       >
         <h4 className="ready-section__biom__text-section__title">
           Biom Dispenser
@@ -28,11 +33,14 @@ function BiomImage({ textOnImageHover, src }) {
         </p>
       </div>
 
-      <img
-        className="ready-section__biom__image"
+      <ProgressiveImage
+        className={classNames("ready-section__biom__image", {
+          hover: isHovered,
+        })}
         src={src}
-        onMouseOver={showTextOnImageHoverHandler}
-        onMouseLeave={hideTextOnImageHoverHandler}
+        placeholder={placeholder}
+        width={width}
+        height={height}
       />
     </div>
   );

@@ -1,4 +1,8 @@
 .btn {
+  $button-radius: 6px;
+
+  cursor: pointer;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -8,13 +12,18 @@
 
   font-family: $fontFamily;
   font-weight: 900;
+  font-size: 13px;
 
   text-transform: uppercase;
-  letter-spacing: 1.95px;
+  letter-spacing: 1.3px;
 
-  border-radius: 6px;
+  border-radius: $button-radius;
   border: none;
   opacity: 1;
+
+  &__text {
+    padding: 16px;
+  }
 
   &__icon {
     display: flex;
@@ -22,16 +31,18 @@
     justify-content: center;
 
     border-left: 1px solid $green;
-    height: 50px;
+    border-top-right-radius: $button-radius - 1;
+    border-bottom-right-radius: $button-radius - 1;
+
     padding-left: 16px;
-    margin-left: 16px;
+    padding-right: 16px;
 
-    > image {
-      display: inline-flex;
-    }
+    height: 100%;
 
-    &:hover {
-      background-color: $green;
+    transition: background-color 0.3s ease-out;
+
+    svg {
+      transition: transform 0.3s ease-out;
     }
   }
 
@@ -46,22 +57,38 @@
     color: $creamyWhite;
     padding: 16px 36px;
 
+    transition: background-color 0.3s ease-out;
+
     &:hover {
       background-color: $darkGreen;
     }
   }
 
-  &.ghost {
-    background-color: $white;
-    color: $green;
-    padding: 16px;
+  &.has-icon {
+    padding: 0;
+  }
 
+  &.outline {
     border: 1px solid $green;
-    border-radius: 6px;
-    opacity: 1;
+  }
 
+  &.move-icon {
     &:hover {
-      background-color: $creamyWhite;
+      .btn__icon svg {
+        transform: translateX(2px);
+      }
+    }
+  }
+
+  &.fill-background:hover {
+    &:hover {
+      .btn__icon {
+        background-color: $green;
+
+        svg path {
+          fill: $white !important;
+        }
+      }
     }
   }
 }

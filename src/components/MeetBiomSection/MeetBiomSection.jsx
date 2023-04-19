@@ -25,7 +25,7 @@ function MeetBiomSection() {
           subTitle="A quality engineered wipes dispenser that looks beautiful in your home, making better habits for your home and planet always within reach."
         />
         <IconTextList iconTextList={iconTextList} />
-        <Button className="secondary" buttonTitle="shop now" />
+        <Button type="secondary" buttonTitle="shop now" />
       </div>
     </div>
   );

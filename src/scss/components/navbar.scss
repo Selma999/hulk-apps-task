@@ -4,11 +4,85 @@
 
   height: 77px;
   width: 100%;
-  
-  
+
   z-index: 999;
 
   backdrop-filter: blur(10px) brightness(1.5) saturate(3);
+
+  &__hamburger-menu-wrapper {
+    display: none;
+
+    position: fixed;
+    top: 40px;
+    right: 40px;
+
+    cursor: pointer;
+  }
+
+  &__hamburger-menu {
+    position: relative;
+    width: 40px;
+    height: 4px;
+
+    background-color: $mintGreen;
+    border-radius: 8px;
+
+    z-index: 1000;
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    &:before,
+    &:after {
+      content: " ";
+      position: absolute;
+      height: 4px;
+      right: 0;
+
+      background-color: $mintGreen;
+      border-radius: 8px;
+
+      transition: 0.3s;
+    }
+
+    &:before {
+      top: -10px;
+      width: 40px;
+    }
+
+    &:after {
+      top: 10px;
+      width: 40px;
+    }
+
+    &__toggle {
+      position: absolute;
+      width: 40px;
+      height: 100%;
+
+      opacity: 0;
+      z-index: 1001;
+
+      cursor: pointer;
+    }
+  }
+
+  &__hamburger-menu {
+    &.active {
+      background-color: transparent;
+      &:before {
+        top: 0;
+        transform: rotate(-45deg);
+        width: 40px;
+      }
+
+      &:after {
+        top: 0;
+        transform: rotate(45deg);
+        width: 40px;
+      }
+    }
+  }
 }
 
 .navbar-items {
@@ -25,12 +99,84 @@
   }
 
   &__item {
-    text-align: left;
-    $fontFamily: normal normal bold Brandon Grotesque;
-    letter-spacing: 1.5px;
-    color: #000000;
-    text-transform: uppercase;
     opacity: 1;
     padding: 0 20px;
+    a {
+      text-align: left;
+      $fontFamily: normal normal bold Brandon Grotesque;
+      letter-spacing: 1.5px;
+      color: $black;
+      text-transform: uppercase;
+      text-decoration: unset;
+    }
+  }
+
+  &__mobile {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .navbar {
+    background-color: $green;
+    &__hamburger-menu-wrapper {
+      display: block;
+    }
+
+    &__hamburger-menu {
+      &__toggle {
+        display: block;
+
+        &.active {
+          transition: transform 0.5s ease-out;
+        }
+      }
+    }
+  }
+
+  .navbar-items {
+    display: none;
+
+    &__group {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    &__logo {
+      display: none;
+    }
+
+    &__item {
+      padding: 20px 0;
+    }
+
+    &__mobile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+
+      position: fixed;
+      top: 77px;
+      right: -200px;
+      transition: 1s;
+
+
+      width: 200px;
+
+      background-color: $green;
+      box-shadow: -20px 0 40px rgba($green, 0.3);
+
+      &.active {
+        transition: 1s;
+        right: 0px;
+      }
+
+      &__toggle {
+        &.active {
+          transition: 1s;
+        }
+      }
+    }
   }
 }

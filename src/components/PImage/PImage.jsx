@@ -5,11 +5,26 @@ import classNames from "classnames";
 import Title from "../Title/Title";
 import ProgressiveImage from "../ProgressiveImage/ProgressiveImage";
 
-function PImage({ src, placeholder, alt, textOverImage, className }) {
+function PImage({
+  src,
+  placeholder,
+  alt,
+  width,
+  height,
+  textOverImage,
+  className,
+}) {
   return (
     <div className={classNames("image-section__image", className || "")}>
-      {/* <img src={src} /> */}
-      <ProgressiveImage src={src} placeholder={placeholder} alt={alt} />
+      <div className="image-section__img-wrapper">
+        <ProgressiveImage
+          src={src}
+          placeholder={placeholder}
+          alt={alt}
+          width={width}
+          height={height}
+        />
+      </div>
       {textOverImage && (
         <div className="image-section__image__text">
           <Title

@@ -3,7 +3,7 @@ import React from "react";
 
 function Title({ className, titleHeader, title, subTitle }) {
   return (
-    <div className={classNames("title-wrapper", className || "")}>
+    <div className={classNames("title", className || "")}>
       <p className={classNames("title__header", className || "")}>
         {titleHeader}
       </p>

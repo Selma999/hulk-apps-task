@@ -4,8 +4,17 @@ import IconText from "./IconText";
 function IconTextList({ iconTextList }) {
   return (
     <div className="icon-text">
-      {iconTextList.map(({ id, icon, text }) => {
-        return <IconText key={id} icon={icon} text={text} />;
+      {iconTextList.map(({ id, src, placeholder, text, width, height }) => {
+        return (
+          <IconText
+            key={id}
+            src={src}
+            placeholder={placeholder}
+            text={text}
+            width={width}
+            height={height}
+          />
+        );
       })}
     </div>
   );

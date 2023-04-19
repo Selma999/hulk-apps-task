@@ -17,7 +17,7 @@ function HeroSection() {
             better-for-the-planet wipes that are easy, effective, and
             plastic-free.
           </p>
-          <Button className="primary" buttonTitle="Get Started" />
+          <Button type="primary" buttonTitle="Get Started" />
         </div>
       </div>
     </div>

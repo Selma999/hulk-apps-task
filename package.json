@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "convert-icons": "npx @svgr/cli -d ./src/assets/svgs-converted ./src/assets/svgs-to-convert --ext jsx"
   },
   "dependencies": {
     "classnames": "^2.3.2",

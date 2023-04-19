@@ -1,31 +1,54 @@
 .image-section {
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 20px;
 
-  overflow: hidden;
+  margin-left: -51px;
 
   &__image {
-    padding: 0 10px;
     position: relative;
-    z-index: -1;
-
-    // transition: all 3s linear;
 
     &__text {
       position: absolute;
       top: 20%;
       left: 20%;
     }
+  }
+}
 
-    // :hover {
-    //   transform: scale(2);
-    // }
+.image-section {
+  .image-section__img-wrapper {
+    cursor: pointer;
+
+    display: flex;
+
+    border-radius: 14px;
+
+    overflow: hidden;
+  }
+
+  .image-section__image {
+    transform: scale(1);
+
+    img {
+      height: 415px;
+      width: auto;
+
+      transition: transform 0.3s ease-out;
+    }
+
+    &:hover {
+      img {
+        transform: scale(1.07);
+      }
+    }
   }
 }
 
 @media screen and (max-width: 1024px) {
   .image-section {
     flex-wrap: wrap;
+    margin-left: unset;
   }
 }

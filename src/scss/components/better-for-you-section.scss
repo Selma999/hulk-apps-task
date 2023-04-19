@@ -4,6 +4,8 @@
   margin: 0 69px;
 
   &__left-group {
+    pointer-events: none;
+
     display: flex;
     z-index: 998;
 
@@ -28,7 +30,7 @@
     margin-left: -350px;
     margin-bottom: 156px;
 
-    z-index: -1;
+    z-index: 0;
 
     > div:last-of-type {
       margin-bottom: -94px;

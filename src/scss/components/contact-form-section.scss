@@ -34,14 +34,19 @@
 
     &__input-field {
       display: flex;
+
+      padding: 15px;
+
       width: 414px;
 
       border: unset;
       border-radius: 6px;
       outline: none;
 
+      font-size: 16px;
+      line-height: 30px;
+
       &::placeholder {
-        padding-left: 15px;
         color: $black;
       }
     }
@@ -80,6 +85,7 @@
 
     &__email {
       width: 100%;
+
       &__input-field {
         flex-wrap: wrap;
         width: 100%;

@@ -1,22 +1,38 @@
-import React, { useState, useRef, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
-function ProgressiveImage({ src, placeholder, alt }) {
-  const [imageSrc, setImageSrc] = useState(placeholder);
-  const imgRef = useRef(null);
+function ProgressiveImage({ className, placeholder, src, width, height, alt }) {
+  const [imageSrc, setImageSrc] = useState();
+  const largeImageLoaded = useRef(false);
 
-  const loadImage = (src) => {
+  const loadImage = () => {
     const image = new Image();
     image.src = src;
     image.onload = () => {
+      largeImageLoaded.current = true;
+
       setImageSrc(src);
     };
   };
 
   useEffect(() => {
-    loadImage;
+    if (largeImageLoaded.current) return;
+
+    setImageSrc(placeholder);
+  }, [placeholder]);
+
+  useEffect(() => {
+    loadImage();
   }, [src]);
 
-  return <img ref={imgRef} src={imageSrc} alt={alt} />;
+  return (
+    <img
+      className={className}
+      src={imageSrc}
+      alt={alt}
+      width={width}
+      height={height}
+    />
+  );
 }
 
 export default ProgressiveImage;

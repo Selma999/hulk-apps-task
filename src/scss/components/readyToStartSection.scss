@@ -1,24 +1,42 @@
 .ready-section {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  gap: 37px;
 
-  margin: 120px 0 -18px;
+  padding-left: 70px;
+
+  margin-top: 120px;
 
   &__left-group {
     display: flex;
     flex-direction: column;
 
-    margin-left: 30px;
+    width: 297px;
 
-    > div {
-      width: 300px;
+    .title,
+    .btn-wrapper {
+      width: 100%;
+    }
+
+    .title {
+      font-weight: 900;
+      font-size: 36px;
+      font-family: Chronicle Display;
+      line-height: 44px;
+      letter-spacing: 0px;
+      color: $black;
+    }
+
+    .btn-wrapper {
+      width: max-content;
     }
   }
 
   &__biom-group {
     display: flex;
     justify-content: space-around;
+
+    // margin-left
   }
 
   &__biom {
@@ -26,26 +44,81 @@
     align-items: flex-end;
     justify-content: flex-start;
 
-    width: 350px;
+    position: relative;
+
+    width: 400px;
+
+    &:not(:first-of-type) {
+      margin-left: -75px;
+    }
+
+    &:nth-of-type(1) {
+      position: relative;
+      z-index: 3;
+    }
+
+    &:nth-of-type(2) {
+      position: relative;
+      z-index: 2;
+    }
+
+    &:nth-of-type(3) {
+      position: relative;
+      z-index: 1;
+    }
 
     &__text-section {
-      display: none;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+
+      position: absolute;
+
+      margin: 0 0 34px 10px;
+      width: max-content;
+
+      opacity: 0;
+      pointer-events: none;
+
+      transition: opacity 0.3s ease-out;
 
       &.hover {
-        display: flex;
-        flex-direction: column;
-        width: 163px;
+        opacity: 1;
+        pointer-events: all;
       }
 
       &__title {
-        width: 163px;
-        letter-spacing: 2.2px;
+        margin: 0;
+
+        font-weight: 900;
         font-size: 22px;
+        font-family: "Chronicle Display";
+        line-height: 28px;
+
+        letter-spacing: 1.05px;
+        color: $black;
       }
 
       &__text {
-        letter-spacing: 1.7px;
-        font-size: 14px;
+        margin: 0;
+
+        font-size: 13px;
+        font-family: $fontFamily;
+        line-height: 28px;
+
+        letter-spacing: 1.4px;
+        color: $black;
+        text-transform: uppercase;
+      }
+    }
+
+    &__image {
+      margin-bottom: -16px;
+
+      transition: transform 0.3s ease-out;
+
+      &.hover {
+        transform: translateX(90px);
       }
     }
   }
@@ -54,7 +127,10 @@
 @media screen and (max-width: 1024px) {
   .ready-section {
     flex-wrap: wrap;
+    justify-content: center;
+
     margin-top: 40px;
+    padding-left: unset;
 
     &__left-group {
       text-align: center;

@@ -8,6 +8,8 @@
 
   &__image {
     display: flex;
+    gap: 20px;
+
     margin-bottom: 40px;
   }
 }
@@ -25,16 +27,20 @@
     margin-bottom: 40px;
     &__image {
       flex-wrap: wrap;
+      justify-content: center;
     }
   }
 
   .image-up {
-    margin-top: -30px;
+    margin-left: -100px;
+    &:not(:first-of-type) {
+      margin-top: -50px;
+    }
   }
 
   .image-down {
     padding-top: unset;
-    margin-left: 130px;
-    margin-top: -30px;
+    margin-left: 150px;
+    margin-top: -50px;
   }
 }
