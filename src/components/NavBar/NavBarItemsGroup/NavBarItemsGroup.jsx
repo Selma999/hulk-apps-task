@@ -4,15 +4,9 @@ import NavBarItem from "../NavBarItem/NavBarItem";
 function NavBarItemsGroup({ navBarItems }) {
   return (
     <div className="navbar-items__group">
-      {navBarItems.map(({ id, navBarItem, navBarIcon, src, alt }) => {
+      {navBarItems.map(({ id, navBarItem, icon }) => {
         return (
-          <NavBarItem
-            key={id}
-            navBarItem={navBarItem}
-            navBarIcon
-            src={src}
-            alt={alt}
-          />
+          <NavBarItem key={id} navBarItem={navBarItem} navBarIcon={icon} />
         );
       })}
     </div>

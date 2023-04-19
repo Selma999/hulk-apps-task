@@ -17,12 +17,7 @@ function DesktopNavigation() {
     <nav className="navbar-items">
       <NavBarItemsGroup navBarItems={navBarItemsLeft} />
       <NavBarLogo logoImage={logoImage} />
-      <NavBarItemsGroup
-        navBarItems={navBarItemsRight}
-        navBarIcon
-        src={<SvgCart />}
-        alt="cart"
-      />
+      <NavBarItemsGroup navBarItems={navBarItemsRight} />
     </nav>
   );
 }
