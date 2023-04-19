@@ -101,13 +101,24 @@
   &__item {
     opacity: 1;
     padding: 0 20px;
-    a {
+
+    &__link {
       text-align: left;
       $fontFamily: normal normal bold Brandon Grotesque;
       letter-spacing: 1.5px;
       color: $black;
       text-transform: uppercase;
       text-decoration: unset;
+
+      display: flex;
+      gap: 12px;
+
+      &__text,
+      &__icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
     }
   }
 
@@ -148,6 +159,15 @@
 
     &__item {
       padding: 20px 0;
+
+      a {
+        color: $white;
+
+        svg path {
+          stroke: $white;
+          fill: $white;
+        }
+      }
     }
 
     &__mobile {
@@ -160,7 +180,6 @@
       top: 77px;
       right: -200px;
       transition: 1s;
-
 
       width: 200px;
 
