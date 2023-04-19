@@ -15,8 +15,9 @@
 
 .title {
   &__header {
+    margin: 0;
+
     font-size: 14px;
-    // line-height: 62px;
     letter-spacing: 2.1px;
     color: $darkGreen;
     text-transform: uppercase;
@@ -36,10 +37,9 @@
   &__title-text {
     font-size: 36px;
     // line-height: 62px;
-    font-weight: 900;
-    font-family: "Chronicle Display";
+    font-family: $tertiaryFontFamily;
     letter-spacing: 0px;
-    color: $darkGreen;
+    color: $black;
 
     &.secondary {
       color: $creamyWhite;
@@ -58,6 +58,8 @@
   }
 
   &__subtitle {
+    margin: 0;
+
     color: $darkGreen;
     text-align: left;
 
